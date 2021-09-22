@@ -5,10 +5,10 @@
   "author": "64 Robots",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "node api.js && nuxt",
     "dev:https": "NODE_TLS_REJECT_UNAUTHORIZED=0 HOST=frontend.theavenue.live HTTPS_LOCALHOST=true nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "build": "node api.js && nuxt build",
+    "start": "node api.js && nuxt start",
     "generate": "nuxt generate",
     "test": "jest"
   },
